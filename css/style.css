@@ -1,0 +1,522 @@
+body {
+    margin: 0;
+    font-family: "Arial";
+}
+
+/* top menu line */
+.header-line-wrap{
+    background-color: #1f1f56;
+}
+
+.header-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 960px;
+}
+
+.header-line ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-line li>a {
+    padding-right: 20px;
+    color: #b1b1d2;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-decoration: none;
+    transition: .5s ease all;
+}
+
+.header-line a:hover {
+    color: #fd8300;
+    cursor: url(../cursor/cursor.cur), auto;
+}
+
+/* Icons of social networks */
+.social-network {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.facebook {
+    display: block;
+    width: 10px;
+    height: 20px;
+    background: url(../img/facebook-white.png) no-repeat center;
+    transition: .1s ease all;
+}
+
+.facebook:hover {
+    background-image: url(../img/facebook-orange.png);
+}
+
+.twitter {
+    display: block;
+    padding: 0 25px;
+    width: 20px;
+    height: 15px;
+    background: url(../img/twitter-white.png) no-repeat center;
+    transition: .1s ease all;
+}
+
+.twitter:hover {
+    background-image: url(../img/twitter-orange.png);
+}
+
+.instagram {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/instagram-white.png) no-repeat center;
+    transition: .1s ease all;
+}
+
+.instagram:hover {
+    background-image: url(../img/instagrame-orange.png);
+}
+
+/* information about us */
+
+.wrapper {
+    margin: 0 auto;
+    width: 960px;
+    box-sizing: border-box;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.header-info hr {
+    margin: 0;
+    width: 50px;
+    background-color: #e4e4ec;
+    transform: rotate(90deg);
+}
+
+/* logo */
+.logo a {
+    text-decoration: none;
+    cursor: url(../cursor/cursor.cur), auto;
+}
+
+/* phone number */
+.phone,.message{
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.phone p {
+    margin: 0;
+}
+
+
+.phone a {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    color: #25252c;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .5s ease all;
+}
+.phone p:nth-child(1) a,
+.message p:nth-child(1) a{
+    display: block;
+    margin-bottom: 14px;
+}
+
+.phone-number::before {
+    content: url(../img/phone-orange.png);
+    position: absolute;
+    left: -10px;    
+    transform: translateX(-100%);
+}
+
+.phone a:hover {
+    color: #fd8300;
+    cursor: url(../cursor/cursor.cur), auto;
+}
+
+/* line */
+.line {
+    width: 1px;
+    height: 50px;
+    background-color: #e4e4ec;
+}
+
+/* message */
+.email,
+.skype {
+    position: relative;
+}
+
+.email::before {
+    content: url(../img/email-orange.png);
+    position: absolute;
+    left: -10px;
+    transform: translateX(-100%);
+}
+
+.skype::before {
+    content: url(../img/skype-orage.png);
+    position: absolute;
+    left: -10px;
+    transform: translateX(-100%);
+}
+
+.message p {
+    margin: 0;
+}
+
+.message a {
+    color: #25252c;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    transition: .5s ease all;
+}
+
+.message a:hover {
+    text-decoration: underline;
+    cursor: url(../cursor/cursor.cur), auto;
+}
+
+/* order button */
+.order-button p {
+    margin: 0;
+}
+
+.order-button a {
+    padding: 15px 30px;
+    color: #25252c;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 24px;
+    border-radius: 25px;
+    border: 2px solid #fd8300;
+    transition: .1s ease all;
+}
+
+.order-button a:hover {
+    color: #fd8300;
+    cursor: url(../cursor/cursor.cur), auto;
+}
+
+/* offer of the month */
+.offer {
+    padding: 60px 0 40px;
+    text-align: center;
+    background: url(../img/background-offer.png) no-repeat center center / contain;
+}
+
+.offer b:nth-child(1) {
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.offer p:nth-child(2) {
+    margin: 0 0 16px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.offer p:nth-child(3)>b:nth-child(2) {
+    color: #fd8300;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.offer p:nth-child(3)>b:nth-child(1) {
+    color: #fd8300;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.offer p:nth-child(3)>b:nth-child(2)>sup{
+    font-size: 15px;
+}
+
+
+/* The main part of the site */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+/* main text */
+
+.about-campaign {
+    max-width: 680px;
+}
+
+main h1 {
+    margin: 0 0 30px;
+    color: #24242b;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.main-text {
+    border-bottom: 1px solid #e4e4ec;
+}
+
+.main-text p {
+    margin: 0 0 25px;
+    color: #666;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.main-text a {
+    color: #fd8300;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: underline;
+    line-height: 24px;
+    transition: .5s ease all;
+}
+
+.main-text a:hover {
+    color: #25252c;
+    cursor: url(../cursor/cursor.cur), auto;
+}
+
+/* Popular projects */
+figure {
+    cursor: url(../cursor/cursor.cur), auto;
+}
+
+.popular-projects h2 {
+    color: #24242b;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    line-height: 24px;
+}
+
+.popular-projects sup {
+    font-size: 8px;
+}
+
+.projects-line {
+    display: flex;
+    column-gap: 40px;
+}
+
+.projects-line a {
+    text-decoration: none;
+}
+
+.projects-line figure {
+    margin: 0;
+    max-width: 250px;
+}
+
+.projects-line img {
+    width: 100%;
+    height: 130px;
+}
+
+.projects-line figcaption {
+    margin-bottom: 45px;
+}
+
+.projects-line h3 {
+    margin: 0;
+}
+
+.projects-line h3>a {
+    color: #1f1f56;
+    font-size: 14px;
+    line-height: 24px;
+    transition: .5s ease all;
+}
+
+.popular-projects h3>a:hover {
+    text-decoration: underline;
+    cursor: url(../cursor/cursor.cur), auto;
+}
+
+.projects-line p {
+    margin: 0;
+    color: #9999a6;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+/* main-menu */
+.main-menu p {
+    margin: 0;
+    padding: 11px 15px;
+    width: 190px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    line-height: 24px;
+    background-color: #1f1f56;
+    border-radius: 3px 3px 0 0;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-li {
+    padding: 0 15px;
+    background-color: #e4e4ec;
+    box-shadow: inset 0px -1px 0px #cecedd;
+}
+
+.main-li:last-child {
+    box-shadow: none;
+    border-radius: 0 0 3px 3px;
+}
+
+.main-li:hover {
+    background-color: #fd8300;
+    cursor: url(../cursor/spatula.cur), auto;
+}
+
+.main-li:hover .sub-menu {
+    display: block;
+}
+
+.main-li:hover .main-headerline {
+    color: #fff;
+    cursor: url(../cursor/spatula.cur), auto;
+}
+
+.main-headerline {
+    display: block;
+    position: relative;
+    padding: 11px 0;
+    color: #25252c;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 24px;
+    transition: .5s ease all;
+}
+
+.main-headerline::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    width: 7px;
+    height: 7px;
+    box-sizing: border-box;
+    border: 3px solid #666;
+    border-left: none;
+    border-top: none;
+    transform: rotate(-45deg);
+    transition: 1s ease all;
+}
+
+.main-li:hover .main-headerline::before {
+    border: 3px solid #fff;
+    border-right: none;
+    border-top: none;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.sub-menu li {
+    margin: 0 -15px;
+    padding: 11px 15px 11px 30px;
+    background-color: #e4e4ec;
+}
+
+.sub-menu li:hover {
+    background-color: #cecedd;
+    cursor: url(../cursor/spatula.cur), auto;
+}
+
+.sub-menu a {
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 24px;
+    cursor: url(../cursor/spatula.cur), auto;
+}
+
+/* the bottom of the site */
+footer{
+    background-color: #ededf5;
+}
+.footer-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 960px;
+    padding: 40px 0 30px;
+}
+
+/* tab about us */
+footer .about-us,
+footer .phone,
+footer .message{
+    width: 220px;
+}
+
+.about-us ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.about-us a {
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 26px;
+    transition: .5s ease all;
+}
+
+.about-us a:hover {
+    color: #fd8300;
+    text-decoration: underline;
+    cursor: url(../cursor/cursor.cur), auto;
+}
+
+.copyright {
+    margin: 0;
+    padding: 15px 0;
+    color: #9999a6;
+    font-size: 13px;
+    text-align: center;
+    line-height: 18px;
+    background-color: #dcdce6;
+}
