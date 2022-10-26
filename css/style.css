@@ -220,7 +220,7 @@ body {
 .offer {
     padding: 60px 0 40px;
     text-align: center;
-    background: url(../img/background-offer.png) no-repeat center center / contain;
+    background: url(../img/background-offer.jpg) no-repeat center center / contain;
 }
 
 .offer b:nth-child(1) {
@@ -351,6 +351,11 @@ figure {
     margin: 0;
 }
 
+.header-upper{
+    margin: 0;
+    text-transform: uppercase;
+}
+
 .projects-line h3>a {
     color: #1f1f56;
     font-size: 14px;
@@ -358,7 +363,7 @@ figure {
     transition: .5s ease all;
 }
 
-.popular-projects h3>a:hover {
+.popular-projects h3:hover {
     text-decoration: underline;
     cursor: url(../cursor/cursor.cur), auto;
 }
