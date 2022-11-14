@@ -1,11 +1,26 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 body {
     margin: 0;
     font-family: "Arial";
 }
 
+
 /* top menu line */
-.header-line-wrap{
+.header-line-wrap {
+    position: fixed;
+    width: 100%;
     background-color: #1f1f56;
+    z-index: 1;
 }
 
 .header-line {
@@ -41,7 +56,7 @@ body {
 }
 
 /* Icons of social networks */
-.social-network ul{
+.social-network ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,7 +67,6 @@ body {
     width: 10px;
     height: 19px;
     background: url(../img/sprayt.png) no-repeat;
-    transition: .1s ease all;
 }
 
 .facebook:hover {
@@ -67,12 +81,11 @@ body {
     height: 15px;
     background: url(../img/sprayt.png) no-repeat;
     background-position: -12px 0;
-    transition: .1s ease all;
 }
 
 .twitter:hover {
     background-image: url(../img/sprayt.png);
-    background-position: -12px -21px;   
+    background-position: -12px -21px;
 }
 
 .instagram {
@@ -81,7 +94,6 @@ body {
     height: 19px;
     background: url(../img/sprayt.png) no-repeat;
     background-position: -32px 0;
-    transition: .1s ease all;
 }
 
 .instagram:hover {
@@ -101,7 +113,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 94px 0 30px;
 }
 
 .header-info hr {
@@ -118,7 +130,8 @@ body {
 }
 
 /* phone number */
-.phone,.message{
+.phone,
+.message {
     padding-left: 30px;
     box-sizing: border-box;
 }
@@ -136,14 +149,15 @@ body {
     text-decoration: none;
     transition: .5s ease all;
 }
+
 .phone p:nth-child(1) a,
-.message p:nth-child(1) a{
+.message p:nth-child(1) a {
     display: block;
     margin-bottom: 14px;
 }
 
 .phone-number,
-.message a{
+.message a {
     position: relative;
 }
 
@@ -230,7 +244,7 @@ body {
     transition: .1s ease all;
 }
 
-.order-button:hover{
+.order-button:hover {
     transform: scale(1.1);
 }
 
@@ -278,7 +292,7 @@ body {
     line-height: 24px;
 }
 
-.offer p:nth-child(3)>b:nth-child(2)>sup{
+.offer p:nth-child(3)>b:nth-child(2)>sup {
     font-size: 15px;
 }
 
@@ -301,7 +315,7 @@ main h1 {
     color: #24242b;
     font-size: 30px;
     font-weight: 700;
-    font-family: "Roboto Slab";
+    font-family: "Roboto Slab", serif;
 }
 
 .main-text {
@@ -373,7 +387,7 @@ figure {
     margin: 0;
 }
 
-.header-upper{
+.header-upper {
     margin: 0;
     text-transform: uppercase;
 }
@@ -398,6 +412,11 @@ figure {
 }
 
 /* main-menu */
+.main-menu nav{
+    position: sticky; 
+    top: 94px;
+}
+
 .main-menu p {
     margin: 0;
     padding: 11px 15px;
@@ -501,9 +520,10 @@ figure {
 }
 
 /* the bottom of the site */
-footer{
+footer {
     background-color: #ededf5;
 }
+
 .footer-line {
     display: flex;
     justify-content: space-between;
@@ -516,7 +536,7 @@ footer{
 /* tab about us */
 footer .about-us,
 footer .phone,
-footer .message{
+footer .message {
     width: 220px;
 }
 
