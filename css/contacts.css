@@ -27,17 +27,16 @@ hr {
     border-top: 1px solid #e4e4ec;
 }
 
-figure {
-    margin: 0;
-}
-
 h1 {
     margin-top: 0;
     color: #24242b;
-    font: 30rem "Roboto Slab";
+    font-size: 24rem;
+    font-weight: 700;
+    font-family: "Roboto Slab";
 }
 
 h2 {
+    margin: 0 0 22rem;
     color: #24242b;
     font: 24rem "Roboto Slab";
 }
@@ -52,6 +51,11 @@ h3 {
 
 h3 b {
     text-transform: lowercase;
+}
+
+header {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .wrapper {
@@ -146,15 +150,15 @@ a.in:hover {
     background-position: -32px -21px;
 }
 
+/* logotype */
+.logo a {
+    cursor: url(../cursor/cursor.cur), auto;
+}
+
 /* Header info */
 .header-info {
     align-items: center;
     padding: 30px 0;
-}
-
-/* logotype */
-.logo a {
-    cursor: url(../cursor/cursor.cur), auto;
 }
 
 /* Mobile Phones */
@@ -261,170 +265,188 @@ a.in:hover {
     background-color: #1f1f56;
 }
 
-/* proposal */
-.offer {
-    padding: 50rem 35rem;
-    text-align: center;
-    background: #131301 url(../img/background-offer.jpg)center / cover;
+/* contact table */
+.contact-table {
+    padding: 40rem 20rem;
 }
 
-.offer p {
-    margin: 0;
+table {
+    width: 100%;
 }
 
-.prop-header-line {
-    color: #fff;
-    font-size: 30rem;
-    text-transform: uppercase;
-    letter-spacing: 2rem;
+th {
+    padding: 7rem 0;
+    text-align: left;
+}
+
+th a {
+    color: #24242b;
+    text-decoration: none;
+    font-size: 14rem;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 
-p.prop-descrip {
-    margin: 10rem 0;
-    color: #fff;
-    font-size: 14px;
-}
-
-.prop-price {
-    font-size: 24rem;
-    color: #fd8300;
-}
-
-.prop-price b {
-    font-size: 40rem;
-}
-
-.main-text p {
-    font-size: 14rem;
-    line-height: 24rem;
+td {
+    padding: 7rem 0;
+    width: 330rem;
     color: #666;
-}
-
-.main-text a {
-    color: #fd8300;
     font-size: 14rem;
-    font-weight: bold;
-    transition: .2s ease all;
-    cursor: url(../cursor/spatula.cur), auto;
 }
 
-.main-text a:hover {
+td a {
+    color: #25252c;
     text-decoration: none;
+    font-size: 18rem;
+    font-weight: bold;
 }
 
-main {
+address {
+    font-style: normal;
+}
+
+td a:hover {
+    color: #fd8300;
+}
+
+.not-bold {
+    color: #25252c;
+    font-weight: normal;
+    font-size: 16rem;
+}
+
+/* forma */
+.forma-bloc {
     padding: 35rem 0 40rem;
 }
 
-/* Popular projects Hata Plus */
-.house {
-    position: relative;
-}
-
-.house p {
-    margin: 0;
-    font-size: 13rem;
-    line-height: 18rem;
-    color: #9999a6;
-}
-
-.house a {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    cursor: url(../cursor/spatula.cur), auto;
-}
-
-.house a:hover~h3 {
-    text-decoration: underline;
-}
-
-/* aside menu */
-.aside-menu {
-    position: sticky;
-    top: 35rem;
-    width: 220rem;
-    border-radius: 3px;
-    overflow: hidden;
-}
-
-.aside-menu p {
-    margin: 0;
-    padding: 12rem 15rem;
-    color: #fff;
-    font-size: 16px;
+h2 {
+    color: #24242b;
+    font-size: 14rem;
     font-weight: 700;
     font-family: "Roboto Slab";
-    background-color: #1f1f56;
 }
 
-.sidebar-menu>li>a:first-child {
-    border: none;
+.forma-line {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 9rem;
+    column-gap: 9rem;
 }
 
-.sidebar-menu>li>a {
-    display: block;
-    color: #25252c;
-    font-size: 14px;
-    text-decoration: none;
-    position: relative;
-    padding: 12rem 15rem;
-    background-color: #e4e4ec;
-    border-top: 1px solid #cdcddd;
-    transition: .2s ease all;
-    cursor: url(../cursor/cursor.cur), auto;
+.forma {
+    width: 100%;
 }
 
-.sidebar-menu>li>a::before {
-    content: '';
-    position: absolute;
-    top: 40%;
-    right: 15px;
-    width: 7px;
-    height: 7px;
-    border-bottom: 2px solid #666;
-    border-right: 2px solid #666;
+.forma>div input {
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+input {
+    margin-bottom: 10rem;
+    padding: 10rem 15rem;
+    width: 100%;
     box-sizing: border-box;
-    transform: rotate(-45deg);
 }
 
-.sidebar-menu>li>a:hover {
+.input-text {
+    padding: 10rem 15rem 76rem;
+}
+
+.send {
+    display: flex;
+    align-items: center;
+}
+
+
+.send p a {
+    display: inline-block;
+    margin-right: 50rem;
+    padding: 12rem 30rem;
     color: #fff;
+    text-decoration: none;
+    font-size: 14rem;
+    font-weight: bold;
+    border-radius: 21px;
     background-color: #fd8300;
 }
 
-.sidebar-menu>li>a:hover .sub-menu {
-    display: block;
+.send p a:hover{
+
 }
 
-.sidebar-menu>li>a:hover::before {
-    border: none;
-    border-bottom: 2px solid #fff;
-    border-left: 2px solid #fff;
+div.send>input{
+    width: 16rem;
+    height: 16rem;
 }
 
-.sub-menu {
-    display: none;
-}
-
-.sub-menu a {
-    display: block;
-    padding: 12rem 15rem 12rem 30rem;
+.send p{
+    margin: 0;
+    font-size: 13rem;
     color: #666;
-    text-decoration: none;
-    font-size: 14rem;
-    background-color: #e4e4ec;
-    transition: .2s ease all;
-    cursor: url(../cursor/cursor.cur), auto;
 }
 
-.sub-menu a:hover {
-    background-color: #cecedd;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* The upper part of the footer */
 .footer-top {
