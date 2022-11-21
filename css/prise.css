@@ -299,6 +299,10 @@ tbody tr {
     background-color: #e4e4ec;
     cursor: url(../cursor/spatula.cur), auto;   
 }
+tbody tr+tr{
+    border-top: 1px solid #cdcddd;
+}
+
 
 tbody tr:hover {
     background-color: #fd8300;

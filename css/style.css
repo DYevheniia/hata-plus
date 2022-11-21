@@ -295,6 +295,9 @@ p.prop-descrip {
 .prop-price b {
     font-size: 40rem;
 }
+.about-as{
+    max-width: 715rem;
+}
 
 .main-text p {
     font-size: 14rem;
@@ -339,6 +342,10 @@ main {
     cursor: url(../cursor/spatula.cur), auto;
 }
 
+.house img{
+    width: 100%;
+}
+
 .house a:hover~h3 {
     text-decoration: underline;
 }
@@ -362,14 +369,13 @@ main {
     background-color: #1f1f56;
 }
 
-.sidebar-menu>li>a:first-child {
-    border: none;
-}
 .sidebar-menu>li{
     background-color: #e4e4ec;
     cursor: url(../cursor/cursor.cur), auto;
 }
-
+.sidebar-menu>li+li{
+    border-top: 1px solid #cdcddd;
+}
 .sidebar-menu>li>a {
     position: relative;
     display: block;
@@ -377,7 +383,6 @@ main {
     font-size: 14px;
     text-decoration: none;
     padding: 12rem 15rem;
-    border-top: 1px solid #cdcddd;
     transition: .2s ease all;
 }
 
@@ -438,6 +443,7 @@ main {
     padding: 40rem 30rem;
     background-color: #ededf5;
 }
+
 
 .footer-menu a {
     color: #666;

@@ -372,16 +372,14 @@ input {
     background-color: #fd8300;
 }
 
-.send p a:hover{
+.send p a:hover {}
 
-}
-
-div.send>input{
+div.send>input {
     width: 16rem;
     height: 16rem;
 }
 
-.send p{
+.send p {
     margin: 0;
     font-size: 13rem;
     color: #666;
