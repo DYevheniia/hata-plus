@@ -365,24 +365,27 @@ main {
 .sidebar-menu>li>a:first-child {
     border: none;
 }
+.sidebar-menu>li{
+    background-color: #e4e4ec;
+    cursor: url(../cursor/cursor.cur), auto;
+}
 
 .sidebar-menu>li>a {
+    position: relative;
     display: block;
     color: #25252c;
     font-size: 14px;
     text-decoration: none;
-    position: relative;
     padding: 12rem 15rem;
-    background-color: #e4e4ec;
     border-top: 1px solid #cdcddd;
     transition: .2s ease all;
-    cursor: url(../cursor/cursor.cur), auto;
 }
+
 
 .sidebar-menu>li>a::before {
     content: '';
     position: absolute;
-    top: 40%;
+    top: 15px;
     right: 15px;
     width: 7px;
     height: 7px;
@@ -392,16 +395,19 @@ main {
     transform: rotate(-45deg);
 }
 
-.sidebar-menu>li>a:hover {
+.sidebar-menu>li:hover>a{
     color: #fff;
+}
+
+.sidebar-menu>li:hover {
     background-color: #fd8300;
 }
 
-.sidebar-menu>li>a:hover .sub-menu {
+.sidebar-menu>li:hover .sub-menu {
     display: block;
 }
 
-.sidebar-menu>li>a:hover::before {
+.sidebar-menu>li:hover a::before {
     border: none;
     border-bottom: 2px solid #fff;
     border-left: 2px solid #fff;
@@ -425,6 +431,7 @@ main {
 .sub-menu a:hover {
     background-color: #cecedd;
 }
+
 
 /* The upper part of the footer */
 .footer-top {
