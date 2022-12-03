@@ -267,7 +267,7 @@ a.in:hover {
 
 /* contact table */
 .contact-table {
-    padding: 40rem 20rem;
+    padding: 40rem 0 20rem;
 }
 
 table {
@@ -347,19 +347,30 @@ input {
     margin-bottom: 10rem;
     padding: 10rem 15rem;
     width: 100%;
+    outline: none;
+    border: 1px solid #c5c5d4;
     box-sizing: border-box;
 }
 
-.input-text {
-    padding: 10rem 15rem 76rem;
+textarea {
+    display: inline-block;
+    margin-bottom: 12rem;
+    padding: 10rem 15rem;
+    height: 106rem;
+    width: 467rem;
+    outline: none;
+    box-sizing: border-box;
 }
 
-.send {
+.send, label {
     display: flex;
     align-items: center;
 }
 
-
+.arrow{
+    width: 16rem;
+    margin: 0 10rem 0 0;
+}
 .send p a {
     display: inline-block;
     margin-right: 50rem;
@@ -370,9 +381,13 @@ input {
     font-weight: bold;
     border-radius: 21px;
     background-color: #fd8300;
+    transition: .2s ease all;
 }
 
-.send p a:hover {}
+.send p a:hover {
+    color: #fd8300;
+    background-color: #1f1f56;
+}
 
 div.send>input {
     width: 16rem;
@@ -385,72 +400,17 @@ div.send>input {
     color: #666;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* The upper part of the footer */
 .footer-top {
     padding: 40rem 30rem;
     background-color: #ededf5;
 }
+
+.footer-top-w {
+    width: 210rem;
+    box-sizing: border-box;
+}
+
 
 .footer-menu a {
     color: #666;

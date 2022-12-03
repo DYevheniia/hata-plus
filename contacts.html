@@ -116,18 +116,20 @@
                 <source srcset="img/map.webp" type="image/webp">
                 <img src="img/map.jpg" alt="Адреса компанії Хата Плюс">
             </picture>
-            <form class="forma">
+            <form action="" method="get">
                 <h2>Форма зворотнього зв’язку</h2>
                 <div class="forma-line">
                     <input type="text" placeholder="Ваше ім’я">
                     <input type="text" placeholder="Телефон">
                 </div>
                 <input type="text" placeholder="Тема повідомлення">
-                <input type="text" placeholder="Текст" class="input-text">
+                <textarea type="text" placeholder="Текст"></textarea>
                 <div class="send">
                     <p><a href="#">Відправити</a></p>
-                    <input type="checkbox" checked="checked" class="arrow">
-                    <p>Я бажаю отримувати останні новини</p>
+                    <label>
+                        <input type="checkbox" checked="checked" class="arrow">
+                        <p>Я бажаю отримувати останні новини</p>
+                    </label>
                 </div>
             </form>
         </div>
@@ -136,7 +138,7 @@
         <!-- The upper part of the footer -->
         <div class="footer-top">
             <div class="wrapper flex-between">
-                <ul class="footer-menu menu">
+                <ul class="footer-menu menu footer-top-w">
                     <li>
                         <a href="#">Будинки</a>
                     </li>
@@ -150,7 +152,7 @@
                         <a href="#">Новини</a>
                     </li>
                 </ul>
-                <ul class="footer-menu menu">
+                <ul class="footer-menu menu footer-top-w">
                     <li>
                         <a href="#">Про компанію</a>
                     </li>
@@ -162,12 +164,12 @@
                     </li>
                 </ul>
                 <!-- Mobile Phones -->
-                <div class="phone">
+                <div class="phone footer-top-w">
                     <p><a href="tel:+380971002525" class="phone-number">+38(097) 100-25-25</a></p>
                     <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
                 </div>
                 <!-- How to contact us -->
-                <div class="message">
+                <div class="message footer-top-w">
                     <p><a href="mailto:hataplus@hata.com.ua" class="email">hataplus@hata.com.ua</a></p>
                     <p><a href="skype:hataplus" class="skype">hataplus</a></p>
                 </div>

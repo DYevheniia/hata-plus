@@ -389,6 +389,10 @@ p.last-p {
     padding: 40rem 30rem;
     background-color: #ededf5;
 }
+.footer-top-w{
+    width: 210rem;
+    box-sizing: border-box;
+}
 
 .footer-menu a {
     color: #666;
