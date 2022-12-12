@@ -112,24 +112,23 @@
         <hr class="wrapper">
         <!-- forma -->
         <div class="flex-between wrapper forma-bloc">
-            <picture>
-                <source srcset="img/map.webp" type="image/webp">
-                <img src="img/map.jpg" alt="Адреса компанії Хата Плюс">
-            </picture>
+            <div class="map"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1bBDia08plEB-lBal8FbVH-O-lYB7dZs&ehbc=2E312F"></iframe></div>
             <form action="" method="get">
                 <h2>Форма зворотнього зв’язку</h2>
                 <div class="forma-line">
                     <input type="text" placeholder="Ваше ім’я">
-                    <input type="text" placeholder="Телефон">
+                    <input type="tel" placeholder="Телефон">
                 </div>
                 <input type="text" placeholder="Тема повідомлення">
                 <textarea type="text" placeholder="Текст"></textarea>
                 <div class="send">
                     <p><a href="#">Відправити</a></p>
-                    <label>
-                        <input type="checkbox" checked="checked" class="arrow">
-                        <p>Я бажаю отримувати останні новини</p>
-                    </label>
+                    <div class="c">
+                        <input type="checkbox" id="check" class="arrow">
+                        <label for="check">
+                            <p>Я бажаю отримувати останні новини</p>
+                        </label>
+                    </div>
                 </div>
             </form>
         </div>
