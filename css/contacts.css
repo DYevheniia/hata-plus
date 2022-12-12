@@ -267,7 +267,7 @@ a.in:hover {
 
 /* contact table */
 .contact-table {
-    padding: 40rem 0 20rem;
+    padding: 40rem 0 31rem;
 }
 
 table {
@@ -329,6 +329,7 @@ td a:hover {
     left: -1rem;
     width: 100%;
     min-height: 400rem;
+    border: none;
 }
 
 .forma-bloc {
@@ -361,19 +362,22 @@ input {
     outline: none;
     border: 1px solid #c5c5d4;
     box-sizing: border-box;
+    border-radius: 3rem;
 }
 
 textarea {
     display: inline-block;
     margin-bottom: 12rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     padding: 10rem 15rem;
     height: 106rem;
     width: 467rem;
     outline: none;
-    resize: none;
+    resize: 100%;
     border: none;
     border: 1px solid #c5c5d4;
     box-sizing: border-box;
+    border-radius: 3rem;
 }
 
 .send {
@@ -427,12 +431,13 @@ textarea {
 .arrow:checked + label::after {
     content: '';
     position: absolute;
-    top: 2.5rem;   
-    left: -22.5rem;
+    top: 3.5rem;   
+    left: -22rem;
     width: 8rem;
     height: 5rem;
     border-bottom: 2px solid #1f1f56;
     border-left: 2px solid #1f1f56;
+    box-sizing: border-box;
     transform: rotate(-45deg);
 }
 
