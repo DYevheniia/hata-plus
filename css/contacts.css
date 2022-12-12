@@ -275,7 +275,7 @@ table {
 }
 
 th {
-    padding: 7rem 0;
+    padding-bottom: 5rem;
     text-align: left;
 }
 
@@ -288,7 +288,7 @@ th a {
 }
 
 td {
-    padding: 7rem 0;
+    padding-bottom: 5rem;
     width: 330rem;
     color: #666;
     font-size: 14rem;
