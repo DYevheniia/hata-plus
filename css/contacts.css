@@ -370,10 +370,11 @@ textarea {
     margin-bottom: 12rem;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     padding: 10rem 15rem;
-    height: 106rem;
-    width: 467rem;
+    max-height: 176rem;
+    min-height: 106rem;
+    min-width: 467rem;
+    max-width: 467rem;
     outline: none;
-    resize: 100%;
     border: none;
     border: 1px solid #c5c5d4;
     box-sizing: border-box;
