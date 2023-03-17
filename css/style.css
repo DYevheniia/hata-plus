@@ -119,10 +119,19 @@ h3 b {
 .header-menu {
     display: none;
     flex-wrap: wrap;
+    position: absolute;
+    padding: 15rem 20rem;
+    text-align: center;
+    top: 53rem;
+    background-color: #1f1f56;
+    left: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 .header-menu li {
     margin-right: 22rem;
+    margin-bottom: 18rem;
 }
 
 .header-menu a {
@@ -133,8 +142,12 @@ h3 b {
     cursor: url(../cursor/cursor.cur), auto;
 }
 
+
 .header-menu a:hover {
     color: #fd8300;
+    
+
+
 }
 
 /* social networks menu */
@@ -149,7 +162,7 @@ h3 b {
 
 .social a {
     display: block;
-    background: url(../img/sprayt.png) no-repeat;
+    background: url(../img/sprite.svg) no-repeat;
     cursor: url(../cursor/cursor.cur), auto;
 }
 
@@ -230,7 +243,7 @@ a.in:hover {
     position: absolute;
     left: -29px;
     top: 3px;
-    background-image: url(../img/sprayt.png);
+    background-image: url(../img/sprite.svg);
 }
 
 .phone-number::before {
@@ -577,13 +590,13 @@ aside {
 .table-wrapper::-webkit-scrollbar,
 .table-wrapper-contact::-webkit-scrollbar{
 background-color: #fd8300;
-border-radius: 0 0 3rem 3rem;
+border-radius: 3rem;
 }
 
 .table-wrapper::-webkit-scrollbar-thumb,
 .table-wrapper-contact::-webkit-scrollbar-thumb{
     background-color: #1f1f56;
-border-radius: 0 0 3rem 3rem;
+border-radius: 3rem;
 
 }
 
@@ -892,9 +905,14 @@ div.send>input {
     }
 
     .header-menu {
-        display: flex;
+        display: flex !important;
+        position: static;
+    padding: 0;
+
     }
 
+.header-menu li {
+    margin-bottom: 0;
 }
 
 @media screen and (min-width:720px) {
