@@ -415,7 +415,7 @@ main {
 }
 
 .house img {
-    /* width: 100%; */
+    width: 100%;
     max-width: 220rem;
     max-height: none;
 }
@@ -911,10 +911,10 @@ div.send>input {
 
     }
 
-.header-menu li {
-    margin-bottom: 0;
+    .header-menu li {
+        margin-bottom: 0;
+    }
 }
-
 @media screen and (min-width:720px) {
     .table-wrapper-contact{
         overflow-x: auto;
