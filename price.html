@@ -5,18 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/prise.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/hata_plus_logo.png">
     <title>Ціни проектів компанії "Хата Плюс". Популярні проєкти, тимчасове проживання.</title>
 </head>
 
 <body>
     <!-- the top of the site -->
-    <header>
+    <header class="box-shadow">
         <!-- top menu line -->
         <div class="header-line">
             <!-- main menu -->
             <nav class="wrapper flex-between">
+                <div class="burger-menu">
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                </div>
                 <ul class="menu header-menu">
                     <li>
                         <a href="index.html">Головна</a>
@@ -70,7 +75,7 @@
         </div>
     </header>
     <!-- Prices and services -->
-    <main>
+    <main class="padding-top-none">
         <!-- Price section -->
         <section class="wrapper table-price">
             <h1>Ціни на послуги тимчасового проживання</h1>
@@ -80,61 +85,63 @@
                 обраного номера.
             </p>
             <!-- Price list -->
-            <table>
-                <thead>
-                    <tr>
-                        <th>Назва котеджу</th>
-                        <th>Загальна площа м.кв.</th>
-                        <th>Кількість кімнат</th>
-                        <th>Гараж</th>
-                        <th>Ціна</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Hamilton Paradise</td>
-                        <td>392</td>
-                        <td>5</td>
-                        <td>2</td>
-                        <td>45 000 $</td>
-                    </tr>
-                    <tr>
-                        <td>Montreal Hourse House</td>
-                        <td>295</td>
-                        <td>3</td>
-                        <td>1</td>
-                        <td>29 750 $</td>
-                    </tr>
-                    <tr>
-                        <td>Edmenton</td>
-                        <td>338</td>
-                        <td>2</td>
-                        <td>2</td>
-                        <td>53 200 $</td>
-                    </tr>
-                    <tr>
-                        <td>Calgary Skyliner</td>
-                        <td>249</td>
-                        <td>2</td>
-                        <td>1</td>
-                        <td>31 000 $</td>
-                    </tr>
-                    <tr>
-                        <td>Quebec Enterprices</td>
-                        <td>392</td>
-                        <td>4</td>
-                        <td>2</td>
-                        <td>110 000 $</td>
-                    </tr>
-                    <tr>
-                        <td>Alberta Maria</td>
-                        <td>349</td>
-                        <td>1</td>
-                        <td>3</td>
-                        <td>67 500 $</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-wrapper">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Назва котеджу</th>
+                            <th>Загальна площа м.кв.</th>
+                            <th>Кількість кімнат</th>
+                            <th>Гараж</th>
+                            <th>Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hamilton Paradise</td>
+                            <td>392</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>45 000 $</td>
+                        </tr>
+                        <tr>
+                            <td>Montreal Hourse House</td>
+                            <td>295</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>29 750 $</td>
+                        </tr>
+                        <tr>
+                            <td>Edmenton</td>
+                            <td>338</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>53 200 $</td>
+                        </tr>
+                        <tr>
+                            <td>Calgary Skyliner</td>
+                            <td>249</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>31 000 $</td>
+                        </tr>
+                        <tr>
+                            <td>Quebec Enterprices</td>
+                            <td>392</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>110 000 $</td>
+                        </tr>
+                        <tr>
+                            <td>Alberta Maria</td>
+                            <td>349</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>67 500 $</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <p>Час заселення з 14-00, виїзд до 12-00.</p>
             <p class="last-p">Можлива погодинна оренда котеджу (мінімальний час оренди - 5 днів).</p>
             <p><a href="#">Ознайомитись з правилами проживання</a></p>
@@ -143,7 +150,7 @@
         <!-- Popular projects Hata Plus -->
         <section class="popular-projects wrapper">
             <h2>Популярні проекти</h2>
-            <div class="flex-between">
+            <div class="flex-between popular-projects-line">
                 <figure class="house">
                     <figcaption>
                         <a href="#"></a>
@@ -203,8 +210,8 @@
     </main>
     <footer>
         <!-- The upper part of the footer -->
-        <div class="footer-top">
-            <div class="wrapper flex-between">
+        <div class="footer-top-wrapper">
+            <div class="footer-top wrapper flex-between">
                 <ul class="footer-menu menu footer-top-w">
                     <li>
                         <a href="#">Будинки</a>

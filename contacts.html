@@ -5,18 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/hata_plus_logo.png">
     <title>Контакти компанії "Хата Плюс”. Контакти менеджера, директора фірми.</title>
 </head>
 
 <body>
     <!-- the top of the site -->
-    <header>
+    <header class="box-shadow">
         <!-- top menu line -->
         <div class="header-line">
             <!-- main menu -->
             <nav class="wrapper flex-between">
+                <div class="burger-menu">
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                    <span class="burger"></span>
+                </div>
                 <ul class="menu header-menu">
                     <li>
                         <a href="index.html">Головна</a>
@@ -69,57 +74,63 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="padding-top-none">
         <section class="wrapper contact-table">
             <h1>Контакти</h1>
             <!-- contact table -->
-            <table>
-                <thead>
-                    <tr>
-                        <th><a href="#">Наш офіс</a></th>
-                        <th><a href="#">Консультація</a></th>
-                        <th><a href="#">Реквізити</a></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <address>с. Війтівці, Хмельницька обл. 27500</address>
-                        </td>
-                        <td>менеджер:</td>
-                        <td rowspan="2">ЄДРПОУ 60045123, ІПН 991097555173<br> 
-                            Св.№59904423
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="tel:+380971002525">+38(097) 100-25-25</a></td>
-                        <td>
-                            <a href="tel:+380671231005">+38(067) 123-10-05</a>
-                        </td>
-                    <tr>
-                        <td><a href="tel:++380971002525">+38(097) 100-25-25</a></td>
-                        <td>директор:</td>
-                        <td rowspan="2">Р/р 11137539962221,<br>
-                            Банк ХФ ПАТ КБ «ПРИВАТБАНК»</td>
-                    </tr>
-                    <tr>
-                        <td><a href="mailto:hataplus@hata.com.ua" class="not-bold">hataplus@hata.com.ua</a></td>
-                        <td><a href="tel:+380689502791">+38(068) 950-27-91</a></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-wrapper-contact">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><a href="#">Наш офіс</a></th>
+                            <th><a href="#">Консультація</a></th>
+                            <th><a href="#">Реквізити</a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <address>с. Війтівці, Хмельницька обл. 27500</address>
+                            </td>
+                            <td>менеджер:</td>
+                            <td rowspan="2">ЄДРПОУ 60045123, ІПН 991097555173<br>
+                                Св.№59904423
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="tel:+380971002525">+38(097) 100-25-25</a></td>
+                            <td>
+                                <a href="tel:+380671231005">+38(067) 123-10-05</a>
+                            </td>
+                        <tr>
+                            <td><a href="tel:++380971002525">+38(097) 100-25-25</a></td>
+                            <td>директор:</td>
+                            <td rowspan="2">Р/р 11137539962221,<br>
+                                Банк ХФ ПАТ КБ «ПРИВАТБАНК»</td>
+                        </tr>
+                        <tr>
+                            <td><a href="mailto:hataplus@hata.com.ua" class="not-bold">hataplus@hata.com.ua</a></td>
+                            <td><a href="tel:+380689502791">+38(068) 950-27-91</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
-        <hr class="wrapper">
+        <div class="wrapper">
+            <hr>
+        </div>
         <!-- forma -->
         <div class="flex-between wrapper forma-bloc">
-            <div class="map"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1bBDia08plEB-lBal8FbVH-O-lYB7dZs&ehbc=2E312F"></iframe></div>
+            <div class="map"><iframe
+                    src="https://www.google.com/maps/d/u/0/embed?mid=1bBDia08plEB-lBal8FbVH-O-lYB7dZs&ehbc=2E312F"></iframe>
+            </div>
             <form action="" method="get">
-                <h2>Форма зворотнього зв’язку</h2>
-                <div class="forma-line">
+                <h2 class="contacts-h2">Форма зворотнього зв’язку</h2>
+                <div class="forma-line margin-bottom">
                     <input type="text" placeholder="Ваше ім’я">
                     <input type="tel" placeholder="Телефон">
                 </div>
-                <input type="text" placeholder="Тема повідомлення">
+                <input type="text" placeholder="Тема повідомлення" class="margin-bottom">
                 <textarea type="text" placeholder="Текст"></textarea>
                 <div class="send">
                     <p><a href="#">Відправити</a></p>
@@ -135,8 +146,8 @@
     </main>
     <footer>
         <!-- The upper part of the footer -->
-        <div class="footer-top">
-            <div class="wrapper flex-between">
+        <div class="footer-top-wrapper">
+            <div class="footer-top wrapper flex-between">
                 <ul class="footer-menu menu footer-top-w">
                     <li>
                         <a href="#">Будинки</a>
